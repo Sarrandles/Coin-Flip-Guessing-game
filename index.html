@@ -5,27 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" type="text/css" rel="stylesheet">
     <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 </head>
 <body>
 
-<!--<div class="coin">
-    &lt;!&ndash;<button id="toss" type="button" onclick="toss()">Flip!</button>&ndash;&gt;
-    <p>
-    You got: <span id="result"></span>
-    </p>
-</div>-->
-
 <div class="text">
-    <h4>Call it. Heads or tails?</h4>
+    <h4>Call it, heads or tails?</h4>
+
+    <h5>The coin is:</h5>
+    <p id="result"></p>
+
+    <h5>You predicted:</h5>
+    <p id="guess"></p>
+
+    <h5>Correct predictions:</h5>
+    <p id="correct"></p>
+
+    <h5>Total flips:</h5>
+    <p id="totalFloops"></p>
+
+    <h6>Psychic prediction percentage:</h6>
+    <p id="psyPercent"></p>
 </div>
 
 <div class="guesses">
-    <button id="headsChoice" type="button" onclick="headsChoice()">Heads</button>
-    <button id="tailsChoice" type="button" onclick="tailsChoice()">Tails</button>
-    <h5>The result is:</h5>
-    <p id="result"></p>
-    <h5>You predicted:</h5>
-    <p id="guess"></p>
+    <button id="headsChoice" type="button" onclick="headsChoice();totalFloops();psyPercent()">Heads</button>
+    <button id="tailsChoice" type="button" onclick="tailsChoice();totalFloops();psyPercent()">Tails</button>
 </div>
 
 </body>

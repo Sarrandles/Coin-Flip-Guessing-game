@@ -1,75 +1,34 @@
 body{
   background-image: url("psych.jpg");
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-}
-
-.text{
-  color: white;
-  font-size: 60px;
-  text-align: center;
-  font-family: 'Merriweather', serif;
+  color:white;
+  font-size: 20px;
+  flex:auto;
+  flex-direction: column;
 }
 
 .guesses{
-    background-color: purple;
-    border-style: groove;
-    border-color: black;
-    border-radius: 20px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+  text-align: center;
+  display:block;
+  width:200px;
+  margin:0 auto;
+  margin-top: 30px;
+}
+
+.text{
+  border-style:solid;
+  border-color: black;
+  text-align: center;
+  background-color: black;
+  display:block;
+  width:200px;
+  margin:0 auto;
+  margin-top: 30px;
 }
 
 button{
-  background-color: #5e27aa;
   color:white;
-  border-radius: 10px;
-  font-size: 30px;
-  font-family: 'Merriweather', serif;
-}
-
-#headsChoice:hover{
-  background-color: black;
-  color: white;
-  border-radius: 10px;
-  font-family: 'Merriweather', serif;
-}
-
-#tailsChoice:hover{
-  background-color: black;
-  color: white;
-  border-radius: 10px;
-  font-family: 'Merriweather', serif;
-}
-
-h5{
-  font-family: 'Merriweather', serif;
-  font-style: normal;
+  background-color: purple;
   font-size: 20px;
-  flex:auto;
-  flex-direction: row;
-}
-
-@keyframes example {
-    0%   {background-color:#ad42f4; left:0px; top:0px;}
-    25%  {background-color:#781cb5; left:0px; top:0px;}
-    50%  {background-color:#25043a; left:0px; top:0px;}
-    75%  {background-color:#5d0099; left:0px; top:0px;}
-    100% {background-color:#4f3063; left:0px; top:0px;}
-}
-
-button{
-    position: relative;
-    background-color: black;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-play-state: running;
+  flex-wrap: wrap;
 }
